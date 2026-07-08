@@ -206,7 +206,7 @@ export default function Contact() {
             {/* Info */}
             <div className="lg:w-96">
               <SectionTitle
-                title="联系方式"
+                title="联系我们"
                 subtitle="也可以通过以下方式联系我们"
                 centered={false}
               />
