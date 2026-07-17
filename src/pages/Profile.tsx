@@ -27,7 +27,6 @@ export default function Profile() {
       <PageBanner
         title="个人中心"
         subtitle="管理您的账户信息"
-        bgColor="bg-navy-800"
       />
 
       <div className="container mx-auto px-4 -mt-16 relative z-10">

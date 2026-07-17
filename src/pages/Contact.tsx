@@ -5,6 +5,7 @@ import ScrollReveal from "@/components/common/ScrollReveal";
 import { contactInfo, inquiryTypes } from "@/data/contact";
 import { supabase } from "@/lib/supabase";
 import { Send, CheckCircle, AlertCircle, Loader2 } from "lucide-react";
+import MapView from "@/components/common/MapView";
 
 export default function Contact() {
   const [submitted, setSubmitted] = useState(false);
@@ -230,12 +231,14 @@ export default function Contact() {
                 ))}
               </div>
 
-              {/* Map placeholder */}
-              <div className="mt-8 rounded-2xl overflow-hidden bg-gray-100 h-56 flex items-center justify-center">
-                <div className="text-center text-gray-400">
-                  <p className="text-sm">公司位置地图</p>
-                  <p className="text-xs mt-1">上海市浦东新区张江高科技园区</p>
-                </div>
+              {/* 地图 */}
+              <div className="mt-8 rounded-2xl overflow-hidden border border-gray-100 shadow-sm h-64 lg:h-72">
+                <MapView
+                  lat={31.2057}
+                  lng={121.6026}
+                  name="美点汇"
+                  address="上海市浦东新区张江高科技园区"
+                />
               </div>
             </div>
           </div>
